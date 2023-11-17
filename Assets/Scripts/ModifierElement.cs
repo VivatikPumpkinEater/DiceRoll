@@ -5,14 +5,27 @@ using UnityEngine.UI;
 public class ModifierElement : MonoBehaviour
 {
     [SerializeField] private TMP_Text _modifierTxt;
+    [SerializeField] private TMP_Text _nameTxt;
     [SerializeField] private Image _icon;
     
+    /// <summary> Значение модификатора </summary>
     public int Value { get; private set; }
 
-    public void Init(Sprite icon, int modifierValue)
+    public Vector3 DefaultValuePosition { get; private set; }
+
+    public Transform TransformValue => _modifierTxt.transform;
+
+    public void Init(ModifierConfig.Model model)
     {
-        _icon.sprite = icon;
-        _modifierTxt.SetText($"+{modifierValue}");
-        Value = modifierValue;
+        Value = model.Value;
+
+        _icon.sprite = model.Icon;
+        _modifierTxt.SetText($"+{Value}");
+        _nameTxt.SetText(model.Name);
+    }
+
+    public void SetDefaultPosition()
+    {
+        DefaultValuePosition = _modifierTxt.transform.position;
     }
 }

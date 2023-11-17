@@ -4,9 +4,6 @@ using UnityEngine;
 [ConfigAttribute(FilePath = "ScriptableObjects")]
 public abstract class BaseConfig<T> : ScriptableObject where T : ScriptableObject
 {
-    public static string Name => Instance.name;
-    public static ScriptableObject Show => Instance;
-
     private static T _instance;
 
     protected static T Instance

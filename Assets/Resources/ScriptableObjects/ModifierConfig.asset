@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b2d8d96d7f40fdb96fbb4f779d321f, type: 3}
+  m_Name: ModifierConfig
+  m_EditorClassIdentifier: 
+  _models:
+  - Name: Force
+    Value: 10
+    Icon: {fileID: -934172056, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Dexterity
+    Value: 8
+    Icon: {fileID: 555209174, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Endurance
+    Value: 6
+    Icon: {fileID: -1829572733, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Intelligence
+    Value: 4
+    Icon: {fileID: -280113254, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Manual dexterity
+    Value: 1
+    Icon: {fileID: 1102763627, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Smuggler
+    Value: 5
+    Icon: {fileID: -2046578722, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Thief
+    Value: 3
+    Icon: {fileID: 1759437656, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Berserker
+    Value: 2
+    Icon: {fileID: -1535009806, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Shuranka
+    Value: 2
+    Icon: {fileID: 851915427, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Shpunka
+    Value: 2
+    Icon: {fileID: -605536109, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}
+  - Name: Shuraha
+    Value: 2
+    Icon: {fileID: 579937807, guid: 34e8da89269df3b4d896c6a01c096969, type: 3}

@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 
+/// <summary> Вьшка кубика </summary>
 [RequireComponent(typeof(BoxCollider2D))]
 public class DiceView : MonoBehaviour
 {

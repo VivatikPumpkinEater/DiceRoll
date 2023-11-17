@@ -14,8 +14,16 @@ public class ModifierConfig : BaseConfig<ModifierConfig>
 
 #endif
 
+    /// <summary> Получить модификаторы </summary>
+    /// <param name="count"> сколько модификаторов</param>
     public static List<Model> GetModifiers(int count = 1)
     {
+        if (count <= 0 || count > Instance._models.Count)
+        {
+            Debug.LogError("Incorrect value!");
+            return null;
+        }
+        
         var modifiers = new List<Model>();
 
         while (modifiers.Count < count)

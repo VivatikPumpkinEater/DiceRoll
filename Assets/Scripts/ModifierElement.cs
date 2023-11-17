@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary> Эллемент модификатора </summary>
 public class ModifierElement : MonoBehaviour
 {
     [SerializeField] private TMP_Text _modifierTxt;
